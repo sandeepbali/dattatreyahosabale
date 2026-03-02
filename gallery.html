@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Dattatreya Hosabale</title>
+    <meta name="description" content="Photo gallery of Dattatreya Hosabale — events, addresses, RSS activities.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <div class="container nav-inner"><a href="index.html" class="nav-logo">
+                <div class="nav-logo-mark">द</div>
+                <div class="nav-logo-name">Dattatreya Hosabale</div>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="seva.html">Seva</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <div class="lang-switch"><button class="lang-btn active" data-lang="en">EN</button><button
+                            class="lang-btn" data-lang="hi">हिं</button></div>
+                </li>
+            </ul><button class="nav-burger" id="nav-burger"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb reveal"><a href="index.html">Home</a><span>›</span><span data-en="Gallery"
+                    data-hi="गैलरी">Gallery</span></div>
+            <p class="text-eyebrow reveal" data-en="Photo Gallery" data-hi="फोटो गैलरी">Photo Gallery</p>
+            <h1 class="reveal" style="margin-top: 12px;" data-en="Moments in service" data-hi="सेवा के क्षण">Moments in
+                service</h1>
+            <div class="saffron-line reveal" style="margin-top: 16px;"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-filters reveal">
+                <button class="filter-btn active" data-filter="all" data-en="All" data-hi="सभी">All</button>
+                <button class="filter-btn" data-filter="events" data-en="Events" data-hi="कार्यक्रम">Events</button>
+                <button class="filter-btn" data-filter="speaking" data-en="Speaking" data-hi="भाषण">Speaking</button>
+                <button class="filter-btn" data-filter="portraits" data-en="Portraits"
+                    data-hi="चित्र">Portraits</button>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item" data-category="portraits"
+                    data-caption="Dattatreya Hosabale — Sarkaryavah of RSS"><img src="images/dattaji.png"
+                        alt="Dattatreya Hosabale portrait" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-caption">Sarkaryavah of RSS</span></div>
+                </div>
+                <div class="gallery-item" data-category="speaking" data-caption="Addressing a public gathering"><img
+                        src="images/speaking1.jpg" alt="Dattatreya Hosabale speaking" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-caption">Addressing a gathering</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events" data-caption="At a national-level event"><img
+                        src="images/event1.jpg" alt="Dattatreya Hosabale at event" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-caption">National-level event</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits" data-caption="Portrait at an RSS function"><img
+                        src="images/portrait1.jpg" alt="Dattatreya Hosabale" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-caption">At an RSS function</span></div>
+                </div>
+                <div class="gallery-item" data-category="events" data-caption="With swayamsevaks at a large gathering">
+                    <img src="images/gathering.jpg" alt="RSS gathering" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-caption">At a large gathering</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="portraits"
+                    data-caption="Dattatreya Hosabale — candid portrait"><img src="images/portrait3.png"
+                        alt="Dattatreya Hosabale candid" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-caption">Candid portrait</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">✕</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous">‹</button>
+        <button class="lightbox-nav lightbox-next" aria-label="Next">›</button>
+        <img id="lightbox-img" src="" alt="Lightbox image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="chapter-nav reveal">
+                <a href="seva.html" class="chapter-link">
+                    <div class="chapter-link-label">← Previous</div>
+                    <div class="chapter-link-title">Seva & Impact</div>
+                </a>
+                <a href="contact.html" class="chapter-link" style="text-align: right;">
+                    <div class="chapter-link-label">Next →</div>
+                    <div class="chapter-link-title">Contact</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Dattatreya Hosabale</h3>
+                    <p>The most comprehensive resource on the Sarkaryavah of the RSS.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="biography.html">Biography</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="seva.html">Seva & Impact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Official</h4>
+                    <ul>
+                        <li><a href="https://www.rss.org" target="_blank">RSS Official ↗</a></li>
+                        <li><a href="https://www.abvp.org" target="_blank">ABVP Official ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Dattatreya Hosabale — The Definitive Resource</p>
+                <div class="footer-credits">
+                    <p>Developed and managed by <a href="https://creaadesigns.com" target="_blank">Creaa Designs</a></p>
+                    <p>Digant Sharma · <a href="tel:+919920808363">+91-9920808363</a> · <a
+                            href="mailto:im@digantsharma.com">im@digantsharma.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

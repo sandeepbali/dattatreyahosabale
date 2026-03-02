@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography — Dattatreya Hosabale</title>
+    <meta name="description"
+        content="The complete biography of Dattatreya Hosabale — early life in Karnataka, education, founding Aseema, and the path to RSS leadership.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .bio-layout {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 64px;
+            align-items: start;
+        }
+
+        .bio-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .bio-portrait {
+            width: 100%;
+            border-radius: var(--radius-md);
+            object-fit: cover;
+            margin-bottom: 24px;
+        }
+
+        .bio-text h3 {
+            margin-top: 48px;
+            margin-bottom: 12px;
+        }
+
+        .bio-text h3:first-child {
+            margin-top: 0;
+        }
+
+        .bio-text p {
+            margin-bottom: 16px;
+            max-width: none;
+        }
+
+        .lang-badges {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin: 24px 0;
+        }
+
+        .lang-badge {
+            text-align: center;
+            padding: 16px 6px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: border-color 0.3s;
+        }
+
+        .lang-badge:hover {
+            border-color: var(--saffron);
+        }
+
+        .lang-badge-script {
+            font-size: 1.2rem;
+            color: var(--saffron);
+            font-family: var(--font-hindi);
+        }
+
+        .lang-badge-name {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-top: 4px;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 16px;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        .chapter-link {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: border-color 0.3s;
+            display: block;
+        }
+
+        .chapter-link:hover {
+            border-color: var(--saffron);
+        }
+
+        .chapter-link-label {
+            font-size: 0.68rem;
+            color: var(--faint);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .chapter-link-title {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            color: var(--charcoal);
+            margin-top: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .bio-layout {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .bio-sidebar {
+                position: static;
+                order: -1;
+            }
+
+            .lang-badges {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .chapter-nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <div class="container nav-inner"><a href="index.html" class="nav-logo">
+                <div class="nav-logo-mark">द</div>
+                <div class="nav-logo-name">Dattatreya Hosabale</div>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="seva.html">Seva</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <div class="lang-switch"><button class="lang-btn active" data-lang="en">EN</button><button
+                            class="lang-btn" data-lang="hi">हिं</button></div>
+                </li>
+            </ul><button class="nav-burger" id="nav-burger"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb reveal"><a href="index.html">Home</a><span>›</span><span data-en="Biography"
+                    data-hi="जीवनी">Biography</span></div>
+            <p class="text-eyebrow reveal" data-en="Life & Heritage" data-hi="जीवन और विरासत">Life & Heritage</p>
+            <h1 class="reveal" style="margin-top: 12px;" data-en="The making of a leader" data-hi="एक नेता का निर्माण">
+                The making of a leader</h1>
+            <div class="saffron-line reveal" style="margin-top: 16px;"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="bio-layout">
+                <div class="bio-text">
+                    <h3 class="reveal" data-en="Roots in Karnataka" data-hi="कर्नाटक में जड़ें">Roots in Karnataka</h3>
+                    <p class="reveal"
+                        data-en="Dattatreya Hosabale was born on December 1, 1954, in the small village of Hosabale in Sorab Taluk, Shimoga district of present-day Karnataka. The village, nestled amidst the verdant landscapes of the Western Ghats, would lend its name to the boy who would one day lead millions."
+                        data-hi="दत्तात्रेय होसबाले का जन्म 1 दिसंबर 1954 को वर्तमान कर्नाटक के शिमोगा जिले के सोरब तालुक के छोटे से गाँव होसबाले में हुआ। पश्चिमी घाट की हरी-भरी भूमि में बसा यह गाँव, उस लड़के को अपना नाम देगा जो एक दिन लाखों का नेतृत्व करेगा।">
+                        Dattatreya Hosabale was born on December 1, 1954, in the small village of Hosabale in Sorab
+                        Taluk, Shimoga district of present-day Karnataka. The village, nestled amidst the verdant
+                        landscapes of the Western Ghats, would lend its name to the boy who would one day lead millions.
+                    </p>
+                    <p class="reveal"
+                        data-en="His family had deep-rooted affiliations with the Rashtriya Swayamsevak Sangh, ingrained in a tradition of selfless service and nationalistic thought. He completed his early schooling in Hosabale and the nearby town of Sagar."
+                        data-hi="उनके परिवार का राष्ट्रीय स्वयंसेवक संघ से गहरा जुड़ाव था, निःस्वार्थ सेवा और राष्ट्रवादी विचारधारा की परंपरा में। उन्होंने होसबाले और पास के नगर सागर में प्रारंभिक शिक्षा पूरी की।">
+                        His family had deep-rooted affiliations with the Rashtriya Swayamsevak Sangh, ingrained in a
+                        tradition of selfless service and nationalistic thought. He completed his early schooling in
+                        Hosabale and the nearby town of Sagar.</p>
+
+                    <div class="pull-quote reveal">
+                        <p data-en="The Sangh's work aligns with the spirit of the people — fostering consensus on matters of national security, social harmony, and cultural preservation."
+                            data-hi="संघ का कार्य जनभावना के अनुरूप है — राष्ट्रीय सुरक्षा, सामाजिक सद्भाव और सांस्कृतिक संरक्षण पर सहमति को बढ़ावा देता है।">
+                            "The Sangh's work aligns with the spirit of the people — fostering consensus on matters of
+                            national security, social harmony, and cultural preservation."</p>
+                    </div>
+
+                    <h3 class="reveal" data-en="Academic Pursuits" data-hi="शैक्षणिक यात्रा">Academic Pursuits</h3>
+                    <p class="reveal"
+                        data-en="Moving to Bengaluru, Dattatreya enrolled at the prestigious National College — an institution with a rich legacy. He earned a Master's degree in English Literature from Bengaluru University, a testament to his intellectual breadth and his ability to bridge traditional Indian thought with global literary traditions."
+                        data-hi="बेंगलुरु जाकर, दत्तात्रेय ने प्रतिष्ठित नेशनल कॉलेज में प्रवेश लिया। उन्होंने बेंगलुरु विश्वविद्यालय से अंग्रेजी साहित्य में स्नातकोत्तर की उपाधि प्राप्त की।">
+                        Moving to Bengaluru, Dattatreya enrolled at the prestigious National College — an institution
+                        with a rich legacy. He earned a Master's degree in English Literature from Bengaluru University,
+                        a testament to his intellectual breadth and his ability to bridge traditional Indian thought
+                        with global literary traditions.</p>
+
+                    <h3 class="reveal" data-en="Mastery of Five Languages" data-hi="पाँच भाषाओं में दक्षता">Mastery of
+                        Five Languages</h3>
+                    <p class="reveal"
+                        data-en="One of his most remarkable attributes is his fluency in five languages — a skill invaluable for leading an organization that spans the vast linguistic diversity of India."
+                        data-hi="उनके सबसे उल्लेखनीय गुणों में से एक पाँच भाषाओं में उनकी दक्षता है — भारत की विशाल भाषाई विविधता वाले संगठन का नेतृत्व करने के लिए अमूल्य।">
+                        One of his most remarkable attributes is his fluency in five languages — a skill invaluable for
+                        leading an organization that spans the vast linguistic diversity of India.</p>
+                    <div class="lang-badges reveal">
+                        <div class="lang-badge">
+                            <div class="lang-badge-script">ಕ</div>
+                            <div class="lang-badge-name">Kannada</div>
+                        </div>
+                        <div class="lang-badge">
+                            <div class="lang-badge-script">हि</div>
+                            <div class="lang-badge-name">Hindi</div>
+                        </div>
+                        <div class="lang-badge">
+                            <div class="lang-badge-script">En</div>
+                            <div class="lang-badge-name">English</div>
+                        </div>
+                        <div class="lang-badge">
+                            <div class="lang-badge-script">த</div>
+                            <div class="lang-badge-name">Tamil</div>
+                        </div>
+                        <div class="lang-badge">
+                            <div class="lang-badge-script">सं</div>
+                            <div class="lang-badge-name">Sanskrit</div>
+                        </div>
+                    </div>
+
+                    <h3 class="reveal" data-en="The Literary Soul — Aseema" data-hi="साहित्यिक आत्मा — असीमा">The
+                        Literary Soul — Aseema</h3>
+                    <p class="reveal"
+                        data-en="He founded 'Aseema' — a widely-read Kannada and English monthly magazine serving as a platform for intellectual discourse and Bharatiya perspectives. The name means 'boundless,' reflecting his conviction that Indian civilizational vision knows no boundaries."
+                        data-hi="उन्होंने 'असीमा' की स्थापना की — एक व्यापक रूप से पढ़ी जाने वाली कन्नड़ और अंग्रेजी मासिक पत्रिका। इसका अर्थ 'असीम' है।">
+                        He founded 'Aseema' — a widely-read Kannada and English monthly magazine serving as a platform
+                        for intellectual discourse and Bharatiya perspectives. The name means 'boundless,' reflecting
+                        his conviction that Indian civilizational vision knows no boundaries.</p>
+
+                    <h3 class="reveal" data-en="Joining the RSS & ABVP" data-hi="RSS और ABVP से जुड़ाव">Joining the RSS
+                        & ABVP</h3>
+                    <p class="reveal"
+                        data-en="In 1968, at age 13, Dattatreya joined the RSS — beginning a lifelong covenant of service. Four years later, in 1972, he joined ABVP during his college years, where his talents for organization and strategic thinking found their fullest expression."
+                        data-hi="1968 में, 13 वर्ष की आयु में, दत्तात्रेय ने RSS में प्रवेश किया — सेवा का आजीवन संकल्प। चार साल बाद, 1972 में, कॉलेज के दौरान ABVP से जुड़े।">
+                        In 1968, at age 13, Dattatreya joined the RSS — beginning a lifelong covenant of service. Four
+                        years later, in 1972, he joined ABVP during his college years, where his talents for
+                        organization and strategic thinking found their fullest expression.</p>
+
+                    <div class="chapter-nav reveal">
+                        <a href="index.html" class="chapter-link">
+                            <div class="chapter-link-label">← Previous</div>
+                            <div class="chapter-link-title">Home</div>
+                        </a>
+                        <a href="timeline.html" class="chapter-link" style="text-align: right;">
+                            <div class="chapter-link-label">Next →</div>
+                            <div class="chapter-link-title">Career Timeline</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bio-sidebar">
+                    <img src="images/dattaji.png" alt="Dattatreya Hosabale" class="bio-portrait reveal">
+                    <div class="info-card reveal">
+                        <div class="info-card-row"><span class="info-card-label" data-en="Born"
+                                data-hi="जन्म">Born</span><span class="info-card-value">December 1, 1954</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Birthplace"
+                                data-hi="जन्मस्थान">Birthplace</span><span class="info-card-value">Hosabale,
+                                Karnataka</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Education"
+                                data-hi="शिक्षा">Education</span><span class="info-card-value">MA English
+                                Literature</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Alma Mater"
+                                data-hi="विश्वविद्यालय">Alma Mater</span><span class="info-card-value">National College,
+                                Bengaluru</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Languages"
+                                data-hi="भाषाएँ">Languages</span><span class="info-card-value">5 (Kan, Hi, En, Ta,
+                                Sa)</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Current Role"
+                                data-hi="वर्तमान पद">Current Role</span><span class="info-card-value">Sarkaryavah,
+                                RSS</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Joined RSS"
+                                data-hi="RSS में शामिल">Joined RSS</span><span class="info-card-value">1968</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Magazine"
+                                data-hi="पत्रिका">Magazine</span><span class="info-card-value">Aseema (Founder)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Dattatreya Hosabale</h3>
+                    <p>The most comprehensive resource on the Sarkaryavah of the RSS.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="biography.html">Biography</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="seva.html">Seva & Impact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Official</h4>
+                    <ul>
+                        <li><a href="https://www.rss.org" target="_blank">RSS Official ↗</a></li>
+                        <li><a href="https://www.abvp.org" target="_blank">ABVP Official ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Dattatreya Hosabale — The Definitive Resource</p>
+                <div class="footer-credits">
+                    <p>Developed and managed by <a href="https://creaadesigns.com" target="_blank">Creaa Designs</a></p>
+                    <p>Digant Sharma · <a href="tel:+919920808363">+91-9920808363</a> · <a
+                            href="mailto:im@digantsharma.com">im@digantsharma.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

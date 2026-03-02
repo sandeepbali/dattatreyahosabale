@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Dattatreya Hosabale</title>
+    <meta name="description"
+        content="Contact information and official channels for Dattatreya Hosabale, Sarkaryavah of the Rashtriya Swayamsevak Sangh.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 36px;
+        }
+
+        .contact-card {
+            padding: 28px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            transition: border-color 0.3s;
+        }
+
+        .contact-card:hover {
+            border-color: var(--saffron);
+        }
+
+        .contact-card-label {
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--faint);
+            margin-bottom: 6px;
+        }
+
+        .contact-card-value {
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            color: var(--charcoal);
+        }
+
+        .contact-card-value a {
+            color: var(--saffron);
+            transition: opacity 0.3s;
+        }
+
+        .contact-card-value a:hover {
+            opacity: 0.7;
+        }
+
+        .official-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 36px;
+        }
+
+        .official-link {
+            padding: 24px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            transition: border-color 0.3s;
+            display: block;
+        }
+
+        .official-link:hover {
+            border-color: var(--saffron);
+        }
+
+        .official-link-label {
+            font-size: 0.68rem;
+            color: var(--faint);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .official-link-name {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            color: var(--charcoal);
+            margin-top: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .official-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <div class="container nav-inner"><a href="index.html" class="nav-logo">
+                <div class="nav-logo-mark">द</div>
+                <div class="nav-logo-name">Dattatreya Hosabale</div>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="seva.html">Seva</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <div class="lang-switch"><button class="lang-btn active" data-lang="en">EN</button><button
+                            class="lang-btn" data-lang="hi">हिं</button></div>
+                </li>
+            </ul><button class="nav-burger" id="nav-burger"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="breadcrumb reveal"><a href="index.html">Home</a><span>›</span><span data-en="Contact"
+                    data-hi="संपर्क">Contact</span></div>
+            <p class="text-eyebrow reveal" data-en="Get In Touch" data-hi="संपर्क करें">Get In Touch</p>
+            <h1 class="reveal" style="margin-top: 12px;" data-en="Contact" data-hi="संपर्क">Contact</h1>
+            <div class="saffron-line reveal" style="margin-top: 16px;"></div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h3 class="reveal" data-en="Dattatreya Hosabale" data-hi="दत्तात्रेय होसबाले">Dattatreya Hosabale
+                    </h3>
+                    <p class="reveal" style="margin-top: 12px; max-width: none;"
+                        data-en="Sarkaryavah (General Secretary) of the Rashtriya Swayamsevak Sangh. For official communications, media inquiries, and event-related requests, please reach out through the official RSS channels listed below."
+                        data-hi="राष्ट्रीय स्वयंसेवक संघ के सरकार्यवाह (महासचिव)। आधिकारिक संचार, मीडिया पूछताछ और कार्यक्रम संबंधी अनुरोधों के लिए, कृपया नीचे सूचीबद्ध आधिकारिक RSS चैनलों के माध्यम से संपर्क करें।">
+                        Sarkaryavah (General Secretary) of the Rashtriya Swayamsevak Sangh. For official communications,
+                        media inquiries, and event-related requests, please reach out through the official RSS channels
+                        listed below.</p>
+
+                    <div class="contact-cards reveal">
+                        <div class="contact-card">
+                            <div class="contact-card-label" data-en="Designation" data-hi="पदनाम">Designation</div>
+                            <div class="contact-card-value" data-en="Sarkaryavah, RSS" data-hi="सरकार्यवाह, RSS">
+                                Sarkaryavah, RSS</div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-label" data-en="Headquarters" data-hi="मुख्यालय">Headquarters</div>
+                            <div class="contact-card-value" data-en="RSS Keshav Kunj, Jhandewalan, New Delhi"
+                                data-hi="RSS केशव कुंज, झंडेवालान, नई दिल्ली">RSS Keshav Kunj, Jhandewalan, New Delhi
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-label" data-en="RSS Website" data-hi="RSS वेबसाइट">RSS Website
+                            </div>
+                            <div class="contact-card-value"><a href="https://www.rss.org" target="_blank"
+                                    rel="noopener">www.rss.org ↗</a></div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-label" data-en="Origin" data-hi="मूल">Origin</div>
+                            <div class="contact-card-value" data-en="Hosabale, Shimoga, Karnataka"
+                                data-hi="होसबाले, शिमोगा, कर्नाटक">Hosabale, Shimoga, Karnataka</div>
+                        </div>
+                    </div>
+
+                    <h3 class="reveal" style="margin-top: 48px;" data-en="Official Channels" data-hi="आधिकारिक चैनल">
+                        Official Channels</h3>
+                    <p class="reveal" style="margin-top: 12px; max-width: none;"
+                        data-en="For official information about the Rashtriya Swayamsevak Sangh and its affiliated organizations, please use the links below."
+                        data-hi="राष्ट्रीय स्वयंसेवक संघ और इसके संबद्ध संगठनों के बारे में आधिकारिक जानकारी के लिए, कृपया नीचे दिए गए लिंक का उपयोग करें।">
+                        For official information about the Rashtriya Swayamsevak Sangh and its affiliated organizations,
+                        please use the links below.</p>
+
+                    <div class="official-links reveal">
+                        <a href="https://www.rss.org" target="_blank" rel="noopener" class="official-link">
+                            <div class="official-link-label">RSS</div>
+                            <div class="official-link-name">rss.org ↗</div>
+                        </a>
+                        <a href="https://www.abvp.org" target="_blank" rel="noopener" class="official-link">
+                            <div class="official-link-label">ABVP</div>
+                            <div class="official-link-name">abvp.org ↗</div>
+                        </a>
+                        <a href="https://twitter.com/RSSorg" target="_blank" rel="noopener" class="official-link">
+                            <div class="official-link-label">RSS on X (Twitter)</div>
+                            <div class="official-link-name">@RSSorg ↗</div>
+                        </a>
+                        <a href="https://www.youtube.com/@RSSorg" target="_blank" rel="noopener" class="official-link">
+                            <div class="official-link-label">YouTube</div>
+                            <div class="official-link-name">RSS YouTube ↗</div>
+                        </a>
+                    </div>
+
+                    <div class="disclaimer-box reveal" style="margin-top: 36px;">
+                        <p data-en="This website is an informational tribute and not an official publication of the RSS. Information is compiled from publicly available sources. For official information, please visit rss.org."
+                            data-hi="यह वेबसाइट एक सूचनात्मक श्रद्धांजलि है। जानकारी सार्वजनिक स्रोतों से संकलित है। आधिकारिक जानकारी के लिए rss.org देखें।">
+                            This website is an informational tribute and not an official publication of the RSS.
+                            Information is compiled from publicly available sources. For official information, please
+                            visit rss.org.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="info-card reveal">
+                        <div class="info-card-row"><span class="info-card-label" data-en="Full Name"
+                                data-hi="पूरा नाम">Full Name</span><span class="info-card-value">Dattatreya
+                                Hosabale</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Role"
+                                data-hi="पद">Role</span><span class="info-card-value">Sarkaryavah, RSS</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Since"
+                                data-hi="से">Since</span><span class="info-card-value">March 2021</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Born"
+                                data-hi="जन्म">Born</span><span class="info-card-value">December 1, 1954</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="From"
+                                data-hi="स्थान">From</span><span class="info-card-value">Shimoga, Karnataka</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Languages"
+                                data-hi="भाषाएँ">Languages</span><span class="info-card-value">Kannada, Hindi, English,
+                                Tamil, Sanskrit</span></div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="Education"
+                                data-hi="शिक्षा">Education</span><span class="info-card-value">MA English Lit.</span>
+                        </div>
+                        <div class="info-card-row"><span class="info-card-label" data-en="HQ"
+                                data-hi="मुख्यालय">HQ</span><span class="info-card-value">Keshav Kunj, New Delhi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="chapter-nav reveal">
+                <a href="gallery.html" class="chapter-link">
+                    <div class="chapter-link-label">← Previous</div>
+                    <div class="chapter-link-title">Gallery</div>
+                </a>
+                <a href="index.html" class="chapter-link" style="text-align: right;">
+                    <div class="chapter-link-label">Next →</div>
+                    <div class="chapter-link-title">Home</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Dattatreya Hosabale</h3>
+                    <p>The most comprehensive resource on the Sarkaryavah of the RSS.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="biography.html">Biography</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="seva.html">Seva & Impact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Official</h4>
+                    <ul>
+                        <li><a href="https://www.rss.org" target="_blank">RSS Official ↗</a></li>
+                        <li><a href="https://www.abvp.org" target="_blank">ABVP Official ↗</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Dattatreya Hosabale — The Definitive Resource</p>
+                <div class="footer-credits">
+                    <p>Developed and managed by <a href="https://creaadesigns.com" target="_blank">Creaa Designs</a></p>
+                    <p>Digant Sharma · <a href="tel:+919920808363">+91-9920808363</a> · <a
+                            href="mailto:im@digantsharma.com">im@digantsharma.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
