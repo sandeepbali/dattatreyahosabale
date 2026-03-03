@@ -3,6 +3,114 @@
    No gimmicks. Scroll reveals, counters, lightbox, language switcher.
    ======================================================================== */
 
+/* ── Temporary Password Protection ── */
+(function () {
+  const PASS = '1123581321';
+  const STORAGE_KEY = '__dh_auth';
+
+  if (sessionStorage.getItem(STORAGE_KEY) === 'true') return;
+
+  // Hide page content immediately
+  document.documentElement.style.overflow = 'hidden';
+
+  document.addEventListener('DOMContentLoaded', function _gate() {
+    document.body.style.visibility = 'hidden';
+    document.body.style.overflow = 'hidden';
+
+    // Build overlay
+    const overlay = document.createElement('div');
+    overlay.id = 'pw-gate';
+    overlay.innerHTML = `
+      <div id="pw-box">
+        <div id="pw-logo">द</div>
+        <h2>Protected Site</h2>
+        <p>Please enter the password to continue.</p>
+        <input type="password" id="pw-input" placeholder="Password" autocomplete="off" />
+        <button id="pw-submit">Enter</button>
+        <p id="pw-error" style="color:#ff6b6b;margin-top:12px;font-size:0.85rem;display:none;">Incorrect password. Please try again.</p>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    // Inject styles
+    const style = document.createElement('style');
+    style.textContent = `
+      #pw-gate {
+        position: fixed; inset: 0; z-index: 99999;
+        display: flex; align-items: center; justify-content: center;
+        background: #0c0c0c;
+        font-family: 'Inter', 'Segoe UI', sans-serif;
+      }
+      #pw-box {
+        background: #161616; border: 1px solid rgba(255,255,255,0.06);
+        border-radius: 16px; padding: 48px 40px; text-align: center;
+        width: 380px; max-width: 90vw;
+        box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+      }
+      #pw-logo {
+        width: 56px; height: 56px; margin: 0 auto 24px;
+        background: linear-gradient(135deg, #e8772e, #ff9f43);
+        border-radius: 12px; display: flex; align-items: center; justify-content: center;
+        font-size: 28px; color: #fff; font-weight: 700;
+      }
+      #pw-box h2 {
+        color: #fff; font-size: 1.35rem; font-weight: 600; margin: 0 0 8px;
+      }
+      #pw-box > p:first-of-type {
+        color: rgba(255,255,255,0.4); font-size: 0.9rem; margin: 0 0 28px;
+      }
+      #pw-input {
+        width: 100%; box-sizing: border-box; padding: 14px 16px;
+        background: #0c0c0c; border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 10px; color: #fff; font-size: 1rem;
+        outline: none; transition: border-color 0.2s;
+      }
+      #pw-input:focus { border-color: #e8772e; }
+      #pw-submit {
+        margin-top: 16px; width: 100%; padding: 14px;
+        background: linear-gradient(135deg, #e8772e, #ff9f43);
+        border: none; border-radius: 10px; color: #fff;
+        font-size: 1rem; font-weight: 600; cursor: pointer;
+        transition: transform 0.15s, box-shadow 0.15s;
+      }
+      #pw-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(232,119,46,0.35); }
+      #pw-submit:active { transform: translateY(0); }
+    `;
+    document.head.appendChild(style);
+
+    // Logic
+    const input = document.getElementById('pw-input');
+    const submit = document.getElementById('pw-submit');
+    const error = document.getElementById('pw-error');
+
+    function attempt() {
+      if (input.value === PASS) {
+        sessionStorage.setItem(STORAGE_KEY, 'true');
+        overlay.style.transition = 'opacity 0.35s';
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+          overlay.remove();
+          style.remove();
+          document.body.style.visibility = '';
+          document.body.style.overflow = '';
+          document.documentElement.style.overflow = '';
+        }, 350);
+      } else {
+        error.style.display = 'block';
+        input.value = '';
+        input.focus();
+        submit.style.transform = 'translateX(-6px)';
+        setTimeout(() => submit.style.transform = 'translateX(6px)', 80);
+        setTimeout(() => submit.style.transform = '', 160);
+      }
+    }
+
+    submit.addEventListener('click', attempt);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') attempt(); });
+    input.focus();
+  });
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── Navbar scroll effect ──
