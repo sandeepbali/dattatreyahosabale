@@ -733,6 +733,13 @@ p {
 }
 
 /* ── Timeline ── */
+.timeline-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 60px;
+  align-items: start;
+}
+
 .timeline {
   position: relative;
   padding-left: 40px;
@@ -1482,7 +1489,20 @@ p {
   }
 
   .impact-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .timeline-layout {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .timeline-layout>.reveal {
+    order: -1;
+  }
+
+  .timeline-layout>.reveal[style*="sticky"] {
+    position: static !important;
   }
 
   .centenary-goals {
